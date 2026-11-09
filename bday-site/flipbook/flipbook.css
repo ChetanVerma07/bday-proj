@@ -1,0 +1,19 @@
+
+*{box-sizing:border-box}html,body{height:100%;margin:0;overflow:hidden;font-family:'Special Elite',monospace}
+body{background:radial-gradient(circle at 50% 40%,#b0344d,#8e1c35 70%);display:grid;place-items:center;padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}
+#petals{position:fixed;inset:0;pointer-events:none;overflow:hidden}
+.pt{position:absolute;top:-30px;border-radius:70% 0 70% 0;background:#ffc9d8;opacity:.85;animation:fall linear infinite}
+@keyframes fall{to{transform:translate(60px,110vh) rotate(540deg)}}
+#stage{width:min(94vw,860px);perspective:1800px;margin-top:-30px}
+#book{position:relative;aspect-ratio:1.72;container-type:inline-size;border-radius:8px;box-shadow:0 20px 50px #0006}
+.half{position:absolute;top:0;bottom:0;width:50%;overflow:hidden;container-type:inline-size}.L{left:0;border-radius:8px 0 0 8px;transform-origin:right}.R{right:0;border-radius:0 8px 8px 0;transform-origin:left}
+.half::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,transparent 85%,#0003)}.R::after{background:linear-gradient(270deg,transparent 85%,#0003)}
+.fwd .L{animation:tl .6s ease-out}.bwd .R{animation:tr .6s ease-out}
+@keyframes tl{from{transform:rotateY(-90deg);filter:brightness(.7)}}@keyframes tr{from{transform:rotateY(90deg);filter:brightness(.7)}}
+.a{position:absolute}.im{background:linear-gradient(#a9d8f0 0 58%,#86c443 58% 82%,#5d9e2f 82%);border-radius:3%}
+.pol{position:absolute;background:#fff;padding:3cqw 3cqw 3cqw;box-shadow:0 2px 6px #0005}.pol .im{width:100%;height:100%;border-radius:0}
+.an{font-family:Anton,Impact,sans-serif;text-transform:uppercase;line-height:.95}.pf{font-family:'Playfair Display',serif}.gv{font-family:'Great Vibes',cursive}.ds{font-family:'Dancing Script',cursive}.pm{font-family:'Permanent Marker',cursive}
+#bar{display:flex;gap:10px;align-items:center;justify-content:center;margin-top:16px;position:relative}
+#bar button{border:0;background:#ffe5ea;color:#8e1c35;border-radius:999px;width:38px;height:34px;font-size:18px;cursor:pointer}#bar span{background:#ffe5ea;color:#8e1c35;border-radius:999px;padding:7px 18px;font:600 13px 'Special Elite';min-width:130px;text-align:center}
+#bar button:focus-visible{outline:3px solid #fff}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}

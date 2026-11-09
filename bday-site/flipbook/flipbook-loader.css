@@ -1,0 +1,5 @@
+html.p3{height:auto;overflow-y:auto}body.p3{display:block;height:auto;padding:0;background:#8e1c35;overflow-y:auto}
+#ov{position:fixed;inset:0;background:#8e1c35;z-index:50;opacity:0;pointer-events:none}
+#fbs{position:relative;height:100vh;height:100dvh;background:#8e1c35}#fbs iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+#down{position:absolute;top:12px;right:16px;z-index:5;border:0;background:#fff;color:#A91620;width:48px;height:48px;border-radius:50%;font-size:22px;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.3);animation:bnc 1.6s infinite}
+@keyframes bnc{50%{transform:translateY(8px)}}
